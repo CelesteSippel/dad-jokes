@@ -22,12 +22,13 @@ const Setup = () => {
     <>
       <section className="joke-box">
         <p>{jokes.en}</p>
-        {showText && <p>- {jokes.setup}</p>}
+        {showText && <p>-{jokes.setup}</p>}
       </section>
       <section className="buttons">
-        <button onClick={() => setShowText(!showText)}>Get a New Joke</button>
+        <button onClick={() => setShowText(!showText)}>Get a Joke</button>
 
-        <button onClick={() => refreshPage()}>Punchline</button>
+        <button onClick={() => setShowText}>Punchline</button>
+        <button onClick={() => refreshPage()}>Refresh</button>
       </section>
     </>
   )
