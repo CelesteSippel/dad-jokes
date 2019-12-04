@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const Punchline = () => {
   const apiUrl = 'https://official-joke-api.appspot.com/random_joke'
-  const [jokes, setJokes] = useState([[]])
+  const [jokes, setJokes] = useState([])
   const getJokeData = async () => {
     const resp = await axios.get(apiUrl)
     setJokes(resp.data)
