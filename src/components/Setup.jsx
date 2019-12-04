@@ -30,10 +30,10 @@ const Setup = () => {
         {showText && <p>-{jokes.setup}</p>}
       </section>
 
-      {/* <section className="joke-box">
+      <section className="joke-box">
         <p>{jokes.en}</p>
         {showText && <p>-{jokes.punchline}</p>}
-      </section> */}
+      </section>
 
       <section className="buttons">
         <button onClick={() => setShowText(jokes.setup)}>Get a Joke</button>
