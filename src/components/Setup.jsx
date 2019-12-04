@@ -26,6 +26,7 @@ const Setup = () => {
       </section>
       <section className="buttons">
         <button onClick={() => setShowText(!showText)}>Get a New Joke</button>
+
         <button onClick={() => refreshPage()}>Punchline</button>
       </section>
     </>
